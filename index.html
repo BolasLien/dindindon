@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" media="screen" href="css/style.css">
+    <style>
+      * {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          font-family: 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
+          box-sizing: border-box;
+      }
+
+      .tree{
+        overflow: hidden;
+        height: 600px;
+        width: 400px;
+        margin: auto;
+      }
+
+      .tree1,.tree2,.tree3{
+        font-size: 0;
+        margin: auto;
+      }
+
+      .tree1{
+        height: 100px;
+        width: 100px;
+        margin-top: 30px;
+      }
+      .tree2{
+        height: 100px;
+        width: 150px;
+      }
+      .tree3{
+        height: 120px;
+        width: 200px;
+      }
+
+      .left,.right{
+        height: 100%;
+        width: 50%;
+        display: inline-block;
+      }
+
+      .left{
+        background: linear-gradient(115deg,rgba(0,0,0,0) 50%,green 50%);
+      }
+      .right{
+        background: linear-gradient(-115deg,rgba(0,0,0,0) 50%,green 50%);
+      }
+
+      .wood{
+        height: 150px;
+        width: 40px;
+        background: brown;
+        margin: auto;
+      }
+      .container{
+        position: relative;
+        z-index: 999;
+        height: 100%;
+        width: 100%;
+        margin: auto;
+      }
+
+      #particles-js{
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- particles.js container -->
+<div id="particles-js">
+</div>
+
+<div class="container">
+  <div class="tree">
+    <div class="tree1">
+      <div class="left"></div>
+      <div class="right"></div>
+    </div>
+    <div class="tree2">
+      <div class="left"></div>
+      <div class="right"></div>
+    </div>
+    <div class="tree3">
+      <div class="left"></div>
+      <div class="right"></div>
+    </div>
+    <div class="wood">
+    </div>
+  </div>
+  <p align="center" style="font-size: 60px; color: white;">聖誕快樂!</p>
+</div>
+
+
+
+<!-- scripts -->
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
+
+  </body>
+</html>
